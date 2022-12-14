@@ -1,0 +1,267 @@
+getgenv().CRASH = true;
+getgenv().BeAnnoying = true;
+getgenv().SWORD = true;
+
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+
+local Window = OrionLib:MakeWindow({Name = "Test/My game--by jude/rev", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
+
+local Tab = Window:MakeTab({
+	Name = "Random",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+local Section = Tab:AddSection({
+	Name = "Sword shit"
+})
+
+Tab:AddToggle({
+	Name = "Get alot of swords",
+	Default = (bool),
+	Callback = function(bool)
+		getgenv().SWORD = bool
+		print(bool)
+		if bool then
+	SWORD()
+		end
+	end    
+    
+})
+
+
+
+
+
+Tab:AddButton({
+	Name = "Drop swords does a ton of damage",
+	Callback = function()
+      		for i,v in pairs(game.Players.LocalPlayer.Backpack:GetChildren()) do
+      if v.ClassName == "Tool" then
+      v.CanBeDropped = true
+      v.Parent =game.Players.LocalPlayer.Character
+      wait()
+      v.Parent = workspace.Terrain
+end
+end
+  	end    
+})
+
+
+
+local Section = Tab:AddSection({
+	Name = "other"
+})
+
+Tab:AddToggle({
+	Name = "Spam drums ANNOYing af",
+	Default = (bool),
+	Callback = function(bool)
+		getgenv().BeAnnoying = bool
+		print(bool)
+		if bool then
+	BeAnnoying()
+		end
+	end    
+    
+})
+
+Tab:AddButton({
+	Name = "Kill all",
+	Callback = function()
+      		
+local clickdetector =game:GetService("Workspace")["Smooth Block Model"].ClickDetector
+fireclickdetector(clickdetector)
+
+  	end    
+})
+
+
+local Tab = Window:MakeTab({
+	Name = "Crashing",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+
+Tab:AddToggle({
+	Name = "Crash server",
+	Default = (bool),
+	Callback = function(bool)
+		getgenv().CRASH = bool
+		print(bool)
+		if bool then
+	CRASH()
+		end
+	end    
+    
+})
+
+
+
+
+
+function CRASH()
+while getgenv().CRASH == true do
+local clickdetector =game:GetService("Workspace").Crash1.Selection1.ClickDetector
+
+fireclickdetector(clickdetector)
+wait()
+local clickdetector =game:GetService("Workspace").Crash1.Selection2.ClickDetector
+
+fireclickdetector(clickdetector)
+local clickdetector =game:GetService("Workspace").Crash1.Selection3.ClickDetector
+
+fireclickdetector(clickdetector)
+local clickdetector =game:GetService("Workspace").Crash1.Selection4.ClickDetector
+
+fireclickdetector(clickdetector)
+local clickdetector =game:GetService("Workspace").Crash1.Selection5.ClickDetector
+
+fireclickdetector(clickdetector)
+local clickdetector =game:GetService("Workspace").Crash1.Selection6.ClickDetector
+
+fireclickdetector(clickdetector)
+local clickdetector =game:GetService("Workspace").Crash1.Selection7.ClickDetector
+
+fireclickdetector(clickdetector)
+local clickdetector =game:GetService("Workspace").Crash1.Selection8.ClickDetector
+
+fireclickdetector(clickdetector)
+
+local clickdetector =game:GetService("Workspace").Crash2.Selection1.ClickDetector
+
+fireclickdetector(clickdetector)
+wait()
+local clickdetector =game:GetService("Workspace").Crash2.Selection2.ClickDetector
+
+fireclickdetector(clickdetector)
+local clickdetector =game:GetService("Workspace").Crash2.Selection3.ClickDetector
+
+fireclickdetector(clickdetector)
+local clickdetector =game:GetService("Workspace").Crash2.Selection4.ClickDetector
+
+fireclickdetector(clickdetector)
+local clickdetector =game:GetService("Workspace").Crash2.Selection5.ClickDetector
+
+fireclickdetector(clickdetector)
+local clickdetector =game:GetService("Workspace").Crash2.Selection6.ClickDetector
+
+fireclickdetector(clickdetector)
+local clickdetector =game:GetService("Workspace").Crash2.Selection7.ClickDetector
+
+fireclickdetector(clickdetector)
+local clickdetector =game:GetService("Workspace").Crash2.Selection8.ClickDetector
+
+fireclickdetector(clickdetector)
+
+local clickdetector =game:GetService("Workspace").Crash3.Selection1.ClickDetector
+
+fireclickdetector(clickdetector)
+wait()
+local clickdetector =game:GetService("Workspace").Crash3.Selection2.ClickDetector
+
+fireclickdetector(clickdetector)
+local clickdetector =game:GetService("Workspace").Crash3.Selection3.ClickDetector
+
+fireclickdetector(clickdetector)
+local clickdetector =game:GetService("Workspace").Crash3.Selection4.ClickDetector
+
+fireclickdetector(clickdetector)
+local clickdetector =game:GetService("Workspace").Crash3.Selection5.ClickDetector
+
+fireclickdetector(clickdetector)
+local clickdetector =game:GetService("Workspace").Crash3.Selection6.ClickDetector
+
+fireclickdetector(clickdetector)
+local clickdetector =game:GetService("Workspace").Crash3.Selection7.ClickDetector
+
+fireclickdetector(clickdetector)
+local clickdetector =game:GetService("Workspace").Crash3.Selection8.ClickDetector
+
+fireclickdetector(clickdetector)
+
+
+
+
+
+
+end
+end
+function SWORD()
+    while  getgenv().SWORD == true do
+        for _,v in pairs(game:GetService("Workspace").ToolGiver.Giver:GetDescendants()) do
+if v:IsA("TouchTransmitter") then
+firetouchinterest(game.Players.LocalPlayer.Character.HumanoidRootPart, v.Parent, 0) --0 is touch
+wait()
+firetouchinterest(game.Players.LocalPlayer.Character.HumanoidRootPart, v.Parent, 1) -- 1 is untouch
+
+for _,v in pairs(game:GetService("Workspace").ToolGiver2.Giver:GetDescendants()) do
+if v:IsA("TouchTransmitter") then
+firetouchinterest(game.Players.LocalPlayer.Character.HumanoidRootPart, v.Parent, 0) --0 is touch
+wait()
+firetouchinterest(game.Players.LocalPlayer.Character.HumanoidRootPart, v.Parent, 1) -- 1 is untouch
+
+end
+end
+end
+end
+end
+end
+
+
+
+
+function BeAnnoying()
+    while getgenv().BeAnnoying == true do
+        wait()
+local clickdetector = game:GetService("Workspace")["Custom heavy drum1"].Crash.ClickDetector -- path to the click detector
+
+fireclickdetector(clickdetector)
+
+
+local clickdetector = game:GetService("Workspace")["Custom heavy drum1"].Hat.Model["crash cymbal"].ClickDetector -- path to the click detector
+
+fireclickdetector(clickdetector)
+
+
+local clickdetector = game:GetService("Workspace")["Custom heavy drum1"].Ride.Model["crash cymbal"].ClickDetector -- path to the click detector
+
+fireclickdetector(clickdetector)
+
+
+local clickdetector = game:GetService("Workspace")["Custom heavy drum2"].Crash.ClickDetector -- path to the click detector
+
+fireclickdetector(clickdetector)
+
+
+local clickdetector = game:GetService("Workspace")["Custom heavy drum2"].Hat.Model["crash cymbal"].ClickDetector -- path to the click detector
+
+fireclickdetector(clickdetector)
+
+
+local clickdetector = game:GetService("Workspace")["Custom heavy drum2"].Ride.Model["crash cymbal"].ClickDetector -- path to the click detector
+
+fireclickdetector(clickdetector)
+
+local clickdetector = game:GetService("Workspace")["Custom heavy drum3"].Crash.ClickDetector -- path to the click detector
+
+fireclickdetector(clickdetector)
+
+
+local clickdetector = game:GetService("Workspace")["Custom heavy drum3"].Hat.Model["crash cymbal"].ClickDetector -- path to the click detector
+
+fireclickdetector(clickdetector)
+
+
+local clickdetector = game:GetService("Workspace")["Custom heavy drum3"].Ride.Model["crash cymbal"].ClickDetector -- path to the click detector
+
+fireclickdetector(clickdetector)
+
+
+end
+end
+        
+        
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/jj123llol/My-personal-admin/main/admin",true))()
+	
+	
